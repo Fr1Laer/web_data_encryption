@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Авторизація</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #120c1b;
+            color: #fff;
+        }
+
+        .login-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .box {
+            background-color: #123450;
+            border-radius: 8px;
+            padding: 20px;
+            width: 300px;
+            text-align: center;
+        }
+
+        .color1 {color: #120c1b;}
+        .color2 {color: #123450;}
+        .color3 {color: #15688f;}
+        .color4 {color: #20a3d8;}
+        .color5 {color: #20dad8;}
+
+        input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            box-sizing: border-box;
+        }
+
+        .login-button {
+            background-color: #20a3d8;
+            color: #fff;
+            padding: 10px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .login-button:hover {
+            background-color: #20dad8;
+        }
+    </style>
+</head>
+<body>
+
+<div class="login-container">
+    <div class="box">
+        <h2 class="color3">Авторизація</h2>
+        <form>
+            <input type="text" id="login" placeholder="Логін">
+            <input type="password" id="password" placeholder="Пароль">
+            <button type="button" class="login-button color4" onclick="checkLogin()">Увійти</button>
+        </form>
+    </div>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>

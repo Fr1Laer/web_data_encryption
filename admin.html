@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Адмін-панель</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #120c1b;
+            color: #fff;
+        }
+
+        .admin-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .box {
+            background-color: #123450;
+            border-radius: 8px;
+            padding: 20px;
+            width: 500px;
+            text-align: center;
+        }
+
+        .color1 {color: #120c1b;}
+        .color2 {color: #123450;}
+        .color3 {color: #15688f;}
+        .color4 {color: #20a3d8;}
+        .color5 {color: #20dad8;}
+
+        .admin-container a {
+            color: #20a3d8;
+            text-decoration: none;
+            display: block;
+            margin-top: 10px;
+        }
+
+        .admin-container a:hover {
+            color: #20dad8;
+        }
+    </style>
+</head>
+<body>
+
+<div class="admin-container">
+    <div class="box">
+        <h2 class="color4">Ласкаво просимо, Адміністраторе!</h2>
+        <p id="adminContent" class="color5">Інформація про користувачів:</p>
+        <script>
+            // Отримуємо дані користувачів з local storage та виводимо на сторінку
+            var userInfoAdmin = localStorage.getItem("userInfoAdmin");
+            document.getElementById("adminContent").innerText += "\n" + userInfoAdmin;
+        </script>
+        <a href="#" id="logoutButton" class="color4">Вийти</a>
+    </div>
+</div>
+
+<script>
+    document.getElementById('logoutButton').addEventListener('click', function() {
+        window.location.href = 'login.html';
+    });
+</script>
+
+</body>
+</html>

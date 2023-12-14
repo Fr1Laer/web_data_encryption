@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Сторінка користувача</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #120c1b;
+            color: #fff;
+        }
+
+        .user-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .box {
+            background-color: #123450;
+            border-radius: 8px;
+            padding: 20px;
+            width: 500px;
+            text-align: center;
+        }
+
+        .color1 {color: #120c1b;}
+        .color2 {color: #123450;}
+        .color3 {color: #1979a5;}
+        .color4 {color: #20a3d8;}
+        .color5 {color: #20dad8;}
+
+        .user-container a {
+            color: #20a3d8;
+            text-decoration: none;
+            display: block;
+            margin-top: 10px;
+        }
+
+        .user-container a:hover {
+            color: #20dad8;
+        }
+    </style>
+</head>
+<body>
+
+<div class="user-container">
+    <div class="box">
+        <h2 class="color4">Ласкаво просимо, Користувач!</h2>
+        <h3 class="color3">Інформація про симетричне шифрування</h3>
+        <p style="text-align: justify;">Симетричне шифрування - це метод криптографії, де один ключ використовується як для шифрування, так і для розшифрування повідомлень. Основна ідея полягає в тому, що той самий ключ використовується і відправником, і отримувачем для забезпечення конфіденційності та цілісності даних. Однією з найпоширеніших симетричних шифрів є AES (Advanced Encryption Standard), який використовує 128-, 192- або 256-бітні ключі для шифрування даних. Однак одним з основних викликів симетричного шифрування є безпечний обмін ключами між комунікаційними сторонами.</p>
+        <a href="#" id="logoutButton" class="color4">Вийти</a>
+    </div>
+</div>
+
+<script>
+    document.getElementById('logoutButton').addEventListener('click', function() {
+        // Перенаправлення на сторінку авторизації при натисканні на кнопку "Вийти"
+        window.location.href = 'login.html';
+    });
+</script>
+
+</body>
+</html>
